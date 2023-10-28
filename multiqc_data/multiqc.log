@@ -1,0 +1,19 @@
+[2023-10-17 11:47:51,701] multiqc                                            [DEBUG  ]  This is MultiQC v1.15
+[2023-10-17 11:47:51,705] multiqc                                            [DEBUG  ]  Command used: /data1/home/kellygd/miniconda3/envs/MOOC/bin/multiqc .
+[2023-10-17 11:47:52,408] multiqc                                            [WARNING]  MultiQC Version v1.16 now available!
+[2023-10-17 11:47:52,408] multiqc                                            [DEBUG  ]  Working dir : /data1/projects/LGMB-008/NGS/Course
+[2023-10-17 11:47:52,408] multiqc                                            [DEBUG  ]  Template    : default
+[2023-10-17 11:47:52,409] multiqc                                            [DEBUG  ]  Running Python 3.11.4 | packaged by conda-forge | (main, Jun 10 2023, 18:08:17) [GCC 12.2.0]
+[2023-10-17 11:47:52,411] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, ccs, ngsderive, purple, conpair, lima, peddy, somalier, methylQA, mosdepth, phantompeakqualtools, qualimap, preseq, hifiasm, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, bustools, goleft_indexcov, gffcompare, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, sambamba, gopeaks, homer, hops, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dragen_fastqc, dedup, pbmarkdup, damageprofiler, biobambam2, jcvi, mtnucratio, picard, vep, sentieon, prokka, qc3C, nanostat, samblaster, samtools, sexdeterrmine, eigenstratdatabasetools, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, snippy, umitools, bbmap, bismark, biscuit, diamond, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, cellranger, snpsplit, odgi, pangolin, nextclade, humid, kat, leehom, librarian, adapterRemoval, bbduk, clipandmerge, cutadapt, flexbar, kaiju, kraken, malt, motus, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, filtlong, prinseqplusplus, pychopper, porechop, pycoqc, minionqc, anglerfish, multivcfanalyzer, clusterflow, checkqc, bcl2fastq, bclconvert, interop, ivar, flash, seqyclean, optitype, whatshap
+[2023-10-17 11:47:52,412] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmpm9e7li0l
+[2023-10-17 11:47:52,788] multiqc                                            [INFO   ]  Search path : /data1/projects/LGMB-008/NGS/Course
+[2023-10-17 11:47:53,116] multiqc                                            [DEBUG  ]  Summary of files that were skipped by the search: [skipped_file_contents_search_errors: 264] // [skipped_module_specific_max_filesize: 25] // [skipped_no_match: 8] // [skipped_ignore_pattern: 2]
+[2023-10-17 11:47:57,957] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.7.2
+[2023-10-17 11:47:57,985] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.7.2
+[2023-10-17 11:47:57,991] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2023-10-17 11:47:58,075] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 2 reports
+[2023-10-17 11:47:58,377] multiqc                                            [DEBUG  ]  Compressing plot data
+[2023-10-17 11:47:58,542] multiqc                                            [INFO   ]  Report      : multiqc_report.html
+[2023-10-17 11:47:58,542] multiqc                                            [INFO   ]  Data        : multiqc_data
+[2023-10-17 11:47:58,543] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpm9e7li0l/multiqc_data' to '/data1/projects/LGMB-008/NGS/Course/multiqc_data'
+[2023-10-17 11:47:59,413] multiqc                                            [INFO   ]  MultiQC complete
