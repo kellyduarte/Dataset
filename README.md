@@ -8,16 +8,17 @@ Available at: https://conda.io/projects/conda/en/latest/index.html
 
 After downloading you can run the install with this command.
 
-'''
+```markdown
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 conda list or conda init
-'''
+```
 Creating the conda environment and installing the necessary tools
-'''
+
+```markdown
 conda env create -n MOOC --file MOOC.yml
 conda activate MOOC
-'''
+```
 
 The first step is to download the sequence data, the course uses this repository in this step https://github.com/CDCgov/datasets-sars-cov-2
 
@@ -50,7 +51,7 @@ This script changes the working directory, downloads the specified genomic sampl
 - Samples source: European Nucleotide Archive (ENA)
 - Learn more about `fastq-dump`: [Documentation](https://rnnh.github.io/bioinfo-notebook/docs/fastq-dump.html)
 
-markdown
+```markdown
 Copy code
 # Genomic Quality Check and MultiQC Script
 
@@ -69,7 +70,9 @@ Ensure these tools are in your PATH or provide their full paths in the script.
 
 ```bash
 ./quality_check_and_multiqc.sh
+
 This script creates a directory for analysis results, conducts a quality check on specified FASTQ files using FastQC, and generates a MultiQC report for aggregated results.
+```
 
 Additional Information
 Quality check tool: FastQC
@@ -78,7 +81,7 @@ Directory Structure
 Results/: Directory containing analysis results.
 QC_Reports/: Quality check reports.
 
-markdown
+```markdown
 Copy code
 # Genomic Mapping Script
 
@@ -98,6 +101,7 @@ Ensure these tools are in your PATH or provide their full paths in the script.
 ```bash
 ./genomic_mapping.sh
 This script creates directories for analysis results, indexes the reference genome, maps genomic sequences to the reference using bwa mem, and processes the resulting SAM file using samtools.
+```
 
 Additional Information
 BWA-MEM documentation: BWA
@@ -119,7 +123,7 @@ Indexing BAM File:
 
 Finally, the BAM file is indexed to speed access to specific genomic regions and read data.
 
-markdown
+```markdown
 Copy code
 # Variant Calling and VCF Processing Script
 
@@ -139,6 +143,7 @@ Ensure these tools are in your PATH or provide their full paths in the script.
 ```bash
 ./variant_calling_and_vcf_processing.sh
 This script indexes the reference genome using samtools faidx, performs variant calling using FreeBayes on a sorted BAM file, and then compresses and indexes the resulting VCF file.
+```
 
 Additional Information
 FreeBayes documentation: FreeBayes
@@ -155,12 +160,10 @@ FreeBayes is used to identify variants from the sorted BAM file (Results/Mapping
 Processing VCF File:
 
 The resulting VCF file is compressed using bgzip and then indexed using tabix for faster access.
+
 Notes
 Adjust paths in the script based on your file locations.
 Customize the script for different samples or datasets as needed.
 Ensure you have the necessary permissions to execute the script.
 Reach out if you have any questions or encounter issues.
-vbnet
-Copy code
 
-Replace the placeholder script name and descriptions with the actual names and details of your script. Customize the information based on your specific use case and environment. This README template provides a brief overview of the script's purpose, prerequisites, usage, and additional information.
